@@ -22,7 +22,10 @@
 
   <div class="row collapse">
     <div class="small-3 columns">
-      <%= f.label :price, class: "right" %><br>
+      <%= f.label :price, class: "right" do %>
+        <span data-tooltip aria-haspopup="true" class="has-tip" title="Price in USD">Price</span>
+      <% end %>
+      <br>
     </div>
     <div class="small-9 columns">
       <%= f.text_field :price %>
